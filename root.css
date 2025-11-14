@@ -1,0 +1,15 @@
+:root[data-theme="light"] {
+    --page-bg: #ffffff;
+
+    --primary-text:
+        --muted-text: --input-bg: --switch-bg: --switch-circle-bg: --switch-circle-pos: --icon-sun: --icon-moon:
+}
+
+:root[data-theme="dark"] {
+    --page-bg: #000000;
+
+    --primary-text:
+        --muted-text: --switch-bg: #F5F5F6;
+    --switch-circle-bg:
+        --switch-circle-pos: --icon-sun: --icon-moon:
+}
