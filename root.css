@@ -1,15 +1,22 @@
 :root[data-theme="light"] {
     --page-bg: #ffffff;
+    --primary-text: #0A0A0A;
 
-    --primary-text:
-        --muted-text: --input-bg: --switch-bg: --switch-circle-bg: --switch-circle-pos: --icon-sun: --icon-moon:
+    --switch-bg: #F5F5F6;
+    --switch-circle-bg: #FFD371;
+    --switch-circle-pos: 0.3rem;
+    --icon-sun: #997F44;
+    --icon-moon: #B1B0B5;
+
 }
 
 :root[data-theme="dark"] {
     --page-bg: #000000;
+    --primary-text: #ffffff;
 
-    --primary-text:
-        --muted-text: --switch-bg: #F5F5F6;
-    --switch-circle-bg:
-        --switch-circle-pos: --icon-sun: --icon-moon:
+    --switch-bg: #0B0B0B;
+    --switch-circle-bg: #7190FF;
+    --switch-circle-pos: 2.8275rem;
+    --icon-sun: #997F44;
+    --icon-moon: #DCE3FF;
 }

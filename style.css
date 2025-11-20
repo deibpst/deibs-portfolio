@@ -1,6 +1,16 @@
+@import url(root.css);
+
 html,
 body {
     scroll-behavior: smooth;
+    background-color: var(--page-bg);
+    color: var(--primary-text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    justify-content: center;
+    align-items: center;
 }
 
 .page {
@@ -11,4 +21,45 @@ body {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+}
+
+#theme-switcher {
+    background-color: var(--switch-bg);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1.33em;
+    cursor: pointer;
+    padding: 0.66rem;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    transform: var(--default-border-radius);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#theme-switcher::before {
+    content: '';
+    position: absolute;
+    width: 2.22rem;
+    height: 2.22rem;
+    background-color: var(--switch-circle-bg);
+    border-radius: 50px;
+    z-index: 0;
+    left: 0;
+    transform: translatex(var(--switch-circle-pos));
+    transition: var(--default-transition);
+}
+
+#theme-switcher svg {
+    z-index: 1;
+    transition: var(--default-transition);
+}
+
+#icon-sun {
+    fill: var(--icon-sun);
+}
+
+#icon-moon {
+    fill: var(--icon-moon);
 }
